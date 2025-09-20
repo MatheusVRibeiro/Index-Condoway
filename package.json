@@ -1,0 +1,27 @@
+{
+  "name": "condoway-website",
+  "version": "1.0.0",
+  "description": "CondoWay - Sistema de Gestão Condominial - Website Institucional",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "build": "echo 'Building static website...'",
+    "deploy": "echo 'Deploy script placeholder'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matheusvribeiro/tcc-condoway"
+  },
+  "keywords": [
+    "condoway",
+    "condominio",
+    "gestao",
+    "website",
+    "tcc"
+  ],
+  "author": "Matheus V. Ribeiro",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
