@@ -15,10 +15,12 @@
 - **Animações**: Cards aparecem com animação quando você rola a página
 
 #### 🎨 Elementos Visuais
-- **Emoticons**: Interface mais amigável e expressiva
+- **Ícones Vetorizados**: Interface moderna com ícones do Flaticon
 - **Gradientes**: Efeitos visuais modernos em botões e backgrounds
 - **Sombras**: Efeitos de profundidade nos elementos
 - **Tipografia**: Fonte Poppins para melhor legibilidade
+- **Badges de Status**: Indicadores visuais para funcionalidades em desenvolvimento
+- **Código Comentado**: Todos os arquivos possuem comentários explicativos detalhados
 
 ### 🛠️ Desenvolvimento
 
@@ -51,6 +53,12 @@ npm run build
 5. **📞 Contato**: Informações de contato e links
 
 ### 🔧 Customização
+
+#### 💻 Compreendendo o Código
+O projeto possui **comentários detalhados** em todos os arquivos principais:
+- **`index.html`**: Estrutura semântica com comentários explicando cada seção
+- **`css/style.css`**: Estilos organizados por seções com explicações detalhadas
+- **`js/main.js`**: JavaScript documentado com explicações de cada funcionalidade
 
 #### 🎨 Cores
 Edite as variáveis CSS em `css/design-tokens.css`:

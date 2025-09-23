@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Definição da codificação de caracteres e linguagem -->
     <meta charset="UTF-8">
+    <!-- Configuração para responsividade em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibida na aba do navegador -->
     <title>🏢 CondoWay - Seu Condomínio Inteligente</title>
+    
+    <!-- SEO Meta Tags -- anderson-->
+    <meta name="description" content="CondoWay - O aplicativo para uma gestão de condomínio mais inteligente e conectada. Simplifique a comunicação, agilize reservas e organize a vida no seu condomínio.">
+    <meta name="keywords" content="condomínio, gestão de condomínio, aplicativo para condomínio, comunicação condomínio, reservas condomínio, encomendas, portaria online, CondoWay, TCC, sistema de condomínio, síndico, moradores, facebook, instagram, tiktok, redes sociais, mídia social, aplicativo móvel, tecnologia condomínio">
+    <meta name="author" content="CondoWay">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon - Ícone que aparece na aba do navegador -->
+    <link rel="icon" type="image/png" href="assets/icons/condoway-logo.png">
+    
+    <!-- Importação do CSS principal do projeto -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Configuração para otimização de carregamento de fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importação da fonte Poppins em diferentes pesos -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <!-- Documento principal do site CondoWay. Estrutura HTML5 -->
-    <!-- Flaticon CDN -->
-    <!-- Linguagem definida para português do Brasil -->
+    
+    <!-- CDN do Flaticon para ícones vetorizados profissionais -->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
 </head>
 <body>
 
+    <!-- CABEÇALHO/NAVEGAÇÃO PRINCIPAL -->
     <header class="navbar">
         <div class="container">
+            <!-- Logo da empresa com imagem e texto -->
             <a href="#" class="logo">
-                    <img src="assets/icons/condoway-logo.png" alt="CondoWay Logo" style="height:60px; width:auto; margin-right:10px;"> 
+                <img src="assets/icons/condoway-logo.png" alt="CondoWay Logo"> 
                 <span>CondoWay</span>
             </a>
+            <!-- Menu de navegação principal -->
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#funcionalidades">Funcionalidades</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#funcionalidades" class="nav-link">Funcionalidades</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#parceiros" class="nav-link">Parceiros</a></li>
+                    <li><a href="#faq" class="nav-link">Ajuda</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
-            <a href="#" class="login-button">Login do Síndico</a>
+            
+            <!-- Menu Hambúrguer para Mobile -->
+            <button class="mobile-menu-toggle" aria-label="Menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Botão de login para síndicos -->
+            <a href="#" class="login-button" id="loginButton">Login do Síndico</a>
         </div>
     </header>
 
+    <!-- SEÇÃO HERO/PRINCIPAL - Apresentação inicial do site -->
     <main id="home" class="hero">
         <div class="container hero-content">
+            <!-- Texto principal da seção hero -->
             <div class="hero-text">
                 <h1><i class="fi fi-br-building"></i> Seu condomínio, mais conectado e inteligente.</h1>
                 <p>O CondoWay simplifica a comunicação, agiliza reservas e organiza a vida no seu condomínio. Tudo na palma da sua mão.</p>
+                <!-- Botões de ação principais -->
                 <div class="action-buttons">
                     <a href="#download" class="btn btn-primary">
                         <i class="fi fi-br-smartphone"></i> 
@@ -50,17 +83,23 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/hero-image.png" alt="App CondoWay em um smartphone">
+            <!-- Imagem ilustrativa do aplicativo -->
+            <div class="aplicativo-condoway">
+                <img src="assets/images/aplicativo-condoway.png" alt="App CondoWay em um smartphone">
             </div>
         </div>
     </main>
 
+    <!-- SEÇÃO DE FUNCIONALIDADES - Cards com as principais features -->
     <section id="funcionalidades" class="features">
         <div class="container">
+            <!-- Tag e título da seção -->
             <span class="section-tag"><i class="fi fi-br-sparkles"></i> O que oferecemos</span>
             <h2><i class="fi fi-br-rocket"></i> Funcionalidades Pensadas para Você</h2>
+            
+            <!-- Grid de cards com as funcionalidades -->
             <div class="features-grid">
+                <!-- Card 1: Reservas de Ambientes -->
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fi fi-br-calendar"></i>
@@ -68,6 +107,8 @@
                     <h3>Reservas de Ambientes</h3>
                     <p>Agende o salão de festas ou a churrasqueira com um calendário visual e intuitivo, sem conflitos.</p>
                 </div>
+                
+                <!-- Card 2: Mural de Avisos -->
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fi fi-br-megaphone"></i>
@@ -75,13 +116,17 @@
                     <h3>Mural de Avisos</h3>
                     <p>Receba comunicados importantes do síndico em tempo real, direto no seu celular.</p>
                 </div>
+                
+                <!-- Card 3: Registro de Ocorrências -->
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fi fi-br-tool"></i>
+                        <i class="fi fi-br-clipboard-list"></i>
                     </div>
                     <h3>Registro de Ocorrências</h3>
                     <p>Reporte problemas de manutenção e acompanhe o status da resolução de forma transparente.</p>
                 </div>
+                
+                <!-- Card 4: Controle de Encomendas -->
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fi fi-br-box"></i>
@@ -89,7 +134,10 @@
                     <h3>Controle de Encomendas</h3>
                     <p>Seja notificado assim que sua encomenda chegar na portaria e registre a retirada com facilidade.</p>
                 </div>
+                
+                <!-- Card 5: Pagamentos (Em Desenvolvimento) -->
                 <div class="feature-card">
+                    <!-- Badge de status para funcionalidades em desenvolvimento -->
                     <div class="status-badge coming-soon">Em Desenvolvimento</div>
                     <div class="feature-icon">
                         <i class="fi fi-br-credit-card"></i>
@@ -97,7 +145,10 @@
                     <h3>Pagamentos Condominiais</h3>
                     <p>Visualize boletos, pague taxas e gerencie extratos de forma integrada.</p>
                 </div>
+                
+                <!-- Card 6: Votações (Em Desenvolvimento) -->
                 <div class="feature-card">
+                    <!-- Badge de status para funcionalidades em desenvolvimento -->
                     <div class="status-badge coming-soon">Em Desenvolvimento</div>
                     <div class="feature-icon">
                         <i class="fi fi-br-vote-yea"></i>
@@ -109,12 +160,23 @@
         </div>
     </section>
 
+    <!-- SEÇÃO DE TESTEMUNHOS - Depoimentos de usuários -->
     <section class="testimonials">
         <div class="container">
+            <!-- Tag da seção -->
             <span class="section-tag"><i class="fi fi-br-comment-dots"></i> Opinião de quem usa</span>
+            <!-- Título da seção -->
             <h2><i class="fi fi-br-smile"></i> Moradores e Síndicos Satisfeitos</h2>
+            
+            <!-- Grid de testemunhos -->
             <div class="testimonials-grid">
+                <!-- Testemunho 1: Moradora -->
                 <div class="testimonial-card">
+                    <!-- Foto do usuário -->
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatar-joana.svg" alt="Joana Silva">
+                    </div>
+                    <!-- Sistema de avaliação com estrelas -->
                     <div class="testimonial-rating">
                         <i class="fi fi-br-star"></i>
                         <i class="fi fi-br-star"></i>
@@ -123,12 +185,20 @@
                         <i class="fi fi-br-star"></i>
                     </div>
                     <p class="testimonial-text">"Com o CondoWay, a comunicação no nosso prédio melhorou 100%. Organizar a reserva da churrasqueira agora é muito mais fácil!"</p>
+                    <!-- Informações do autor -->
                     <div class="testimonial-author">
-                        <strong><i class="fi fi-br-user-female"></i> Joana Silva</strong>
+                        <strong>Joana Silva</strong>
                         <span class="testimonial-role">Moradora, Bloco A</span>
                     </div>
                 </div>
+                
+                <!-- Testemunho 2: Síndico -->
                 <div class="testimonial-card">
+                    <!-- Foto do usuário -->
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatar-carlos.svg" alt="Carlos Almeida">
+                    </div>
+                    <!-- Sistema de avaliação com estrelas -->
                     <div class="testimonial-rating">
                         <i class="fi fi-br-star"></i>
                         <i class="fi fi-br-star"></i>
@@ -137,8 +207,9 @@
                         <i class="fi fi-br-star"></i>
                     </div>
                     <p class="testimonial-text">"Gerenciar as ocorrências e os avisos ficou muito mais prático. A transparência com os moradores aumentou e meu trabalho foi otimizado."</p>
+                    <!-- Informações do autor -->
                     <div class="testimonial-author">
-                        <strong><i class="fi fi-br-user-tie"></i> Carlos Almeida</strong>
+                        <strong>Carlos Almeida</strong>
                         <span class="testimonial-role">Síndico</span>
                     </div>
                 </div>
@@ -146,11 +217,178 @@
         </div>
     </section>
 
+    <!-- SEÇÃO SOBRE - Informações sobre o projeto -->
     <section id="sobre" class="about">
         <div class="container">
+            <!-- Tag e título da seção -->
             <span class="section-tag"><i class="fi fi-br-graduation-cap"></i> O Projeto</span>
             <h2><i class="fi fi-br-lightbulb"></i> Uma solução completa para a vida em condomínio</h2>
             <p class="section-subtitle">O CondoWay nasceu como um projeto de TCC com a missão de modernizar a gestão condominial, focando em uma experiência de usuário simples e eficiente.</p>
+            
+            <!-- Grid com informações detalhadas -->
+            <div class="about-grid">
+                <!-- Card 1: Nossa Missão -->
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fi fi-br-target"></i>
+                    </div>
+                    <h3>Nossa Missão</h3>
+                    <p>Transformar a gestão de condomínios através da tecnologia, criando uma ponte digital entre síndicos e moradores para uma comunicação mais eficiente e transparente.</p>
+                </div>
+                
+                <!-- Card 2: Tecnologia -->
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fi fi-br-computer"></i>
+                    </div>
+                    <h3>Tecnologia</h3>
+                    <p>Desenvolvido com as mais modernas tecnologias web e mobile, garantindo performance, segurança e uma experiência de usuário excepcional em todas as plataformas.</p>
+                </div>
+                
+                <!-- Card 3: Impacto -->
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fi fi-br-chart-growth"></i>
+                    </div>
+                    <h3>Impacto</h3>
+                    <p>Reduzindo em até 70% o tempo gasto com tarefas administrativas, melhorando a comunicação e aumentando a satisfação dos moradores e síndicos.</p>
+                </div>
+            </div>
+            
+            <!-- Estatísticas do projeto -->
+            <div class="project-stats">
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Funcionalidades Principais</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Gratuito para Moradores</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Disponibilidade</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">LGPD</span>
+                    <span class="stat-label">Conformidade</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FAQ - Perguntas Frequentes -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <span class="section-tag"><i class="fi fi-br-comment-question"></i> Dúvidas</span>
+            <h2><i class="fi fi-br-interrogation"></i> Perguntas Frequentes</h2>
+            
+            <div class="faq-grid">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Como faço para baixar o aplicativo?</span>
+                        <i class="fi fi-br-angle-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O CondoWay estará disponível para download na Google Play Store e Apple App Store. Por enquanto, estamos na fase de desenvolvimento, mas em breve você poderá baixar o app gratuitamente.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>O aplicativo é gratuito?</span>
+                        <i class="fi fi-br-angle-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! O CondoWay é completamente gratuito para moradores. O condomínio pode optar por planos premium com funcionalidades avançadas para a administração.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Como o síndico pode começar a usar?</span>
+                        <i class="fi fi-br-angle-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O síndico deve fazer o cadastro do condomínio através do painel administrativo. Após a configuração inicial, todos os moradores receberão um convite para baixar o app.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Meus dados estão seguros?</span>
+                        <i class="fi fi-br-angle-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente! Utilizamos criptografia de ponta e seguimos as melhores práticas de segurança. Seus dados são protegidos conforme a LGPD (Lei Geral de Proteção de Dados).</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Funciona em todos os tipos de condomínio?</span>
+                        <i class="fi fi-br-angle-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! O CondoWay foi desenvolvido para atender desde pequenos condomínios residenciais até grandes complexos comerciais. O sistema se adapta ao tamanho e necessidades específicas de cada condomínio.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Quando as funcionalidades de pagamento estarão disponíveis?</span>
+                        <i class="fi fi-br-angle-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>As funcionalidades de pagamento e votação estão previstas para o segundo semestre de 2025. Estamos trabalhando em parcerias com instituições financeiras para oferecer a melhor experiência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parceiros" class="partners-section">
+        <div class="container">
+            <h2><i class="fi fi-br-users-alt"></i> Nossos Parceiros</h2>
+            <p>Conheça os talentosos desenvolvedores que fazem parte da nossa jornada</p>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-avatar">
+                        <span>R</span>
+                    </div>
+                    <h3>Rafael</h3>
+                    <p>Desenvolvedor Full Stack</p>
+                    <a href="https://condoway.wordpress.com/?_gl=1*sb9c9b*_gcl_au*MTk5Njc3NTEwMC4xNzU1NTY0MDQ3LjU2NTc4MjcxNC4xNzU4NTg4MzE0LjE3NTg1ODgzMjQ" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <i class="fi fi-br-link"></i> Ver Portfólio
+                    </a>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-avatar">
+                        <span>L</span>
+                    </div>
+                    <h3>Leo</h3>
+                    <p>Desenvolvedor Full Stack</p>
+                    <a href="https://churaskin.wordpress.com/" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <i class="fi fi-br-link"></i> Ver Portfólio
+                    </a>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-avatar">
+                        <span>L</span>
+                    </div>
+                    <h3>Lucas</h3>
+                    <p>Desenvolvedor Full Stack</p>
+                    <a href="https://effortless-griffin-bc2bfa.netlify.app" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <i class="fi fi-br-link"></i> Ver Portfólio
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -159,8 +397,8 @@
             <h2><i class="fi fi-br-smartphone"></i> Leve o CondoWay com você</h2>
             <p>Disponível para as principais plataformas móveis. Baixe agora!</p>
             <div class="app-store-buttons">
-                <a href="#"><img src="assets/icons/playstore.png" alt="Disponível no Google Play" style="height:48px;"></a>
-                <a href="#"><img src="assets/icons/appstore.svg" alt="Baixar na App Store" style="height:48px;"></a>
+                <a href="https://play.google.com/store/" target="_blank" rel="noopener noreferrer" aria-label="Baixar no Google Play"><img src="assets/icons/playstore.png" alt="Disponível no Google Play"></a>
+                <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer" aria-label="Baixar na App Store"><img src="assets/icons/appstore.svg" alt="Baixar na App Store"></a>
             </div>
         </div>
     </section>
@@ -170,15 +408,55 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <a href="#" class="logo">
-                            <img src="assets/icons/condoway-t.png" alt="CondoWay Logo" style="height:60px; width:auto; margin-right:14px;">
+                        <img src="assets/icons/condoway-transparente.png" alt="CondoWay Logo">
                         <span>CondoWay</span>
                     </a>
                     <p>Um Projeto de TCC para modernizar a gestão de condomínios.</p>
                 </div>
                 <div class="footer-contact">
                     <h4><i class="fi fi-br-phone-call"></i> Contato</h4>
-                    <p><i class="fi fi-br-envelope"></i> <a href="mailto:contato@condoway.com">contato@condoway.com</a> </p>
-                    <p><i class="fi fi-br-social-network"> </i> <a href="https://github.com/matheusvribeiro/tcc-condoway" target="_blank">Github do Projeto</a></p>
+                    <p><i class="fi fi-br-envelope"></i> <a href="mailto:contato@condoway.com">contato@condoway.com</a></p>
+                    <p><i class="fi fi-br-social-network"></i> <a href="https://github.com/matheusvribeiro/tcc-condoway" target="_blank">Github do Projeto</a></p>
+                    
+                    <!-- Redes Sociais -->
+                    <div class="social-links">
+                        <h4><i class="fi fi-br-share"></i> Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/condoway" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="fi fi-brands-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/condoway" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fi fi-brands-instagram"></i>
+                            </a>
+                            <a href="https://tiktok.com/@condoway" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <i class="fi fi-brands-tik-tok"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/condoway" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fi fi-brands-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário de Contato -->
+                    <div class="contact-form-container">
+                        <button class="contact-form-toggle" onclick="toggleContactForm()">
+                            <i class="fi fi-br-comment-dots"></i> Enviar Mensagem
+                        </button>
+                        <form class="contact-form" id="contactForm" style="display: none;">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Sua mensagem" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit-btn">
+                                <i class="fi fi-br-paper-plane"></i> Enviar
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -187,13 +465,52 @@
         </div>
     </footer>
 
-    <!-- Botão Scroll to Top -->
+    <!-- BOTÃO SCROLL TO TOP - Volta ao topo da página -->
     <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
         <i class="fi fi-br-angle-up"></i>
     </button>
 
-    <script>
-      feather.replace();
-    </script>
+    <!-- MODAL DE LOGIN -->
+    <div id="loginModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fi fi-br-user-lock"></i> Login do Síndico</h3>
+                <button class="modal-close" onclick="closeModal('loginModal')">
+                    <i class="fi fi-br-cross"></i>
+                </button>
+            </div>
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">E-mail</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Senha</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Sua senha" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="rememberMe" name="remember">
+                        <span class="checkmark"></span>
+                        Lembrar de mim
+                    </label>
+                </div>
+                <button type="submit" class="login-submit-btn">
+                    <i class="fi fi-br-sign-in-alt"></i> Entrar
+                </button>
+                <div class="login-links">
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+                    <a href="#" class="create-account">Criar conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- OVERLAY PARA MODAIS -->
+    <div id="modalOverlay" class="modal-overlay" onclick="closeAllModals()" style="display: none;"></div>
+
+    <!-- SCRIPTS -->
+    <!-- Script principal do projeto -->
+    <script src="js/main.js"></script>
 </body>
 </html>

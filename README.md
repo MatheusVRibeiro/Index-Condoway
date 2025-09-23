@@ -11,12 +11,17 @@ O CondoWay é um projeto de TCC que visa modernizar a gestão condominial, focan
 - **💳 Pagamentos Condominiais (Em desenvolvimento)**: Visualização de boletos, pagamento e gestão de extratos — em desenvolvimento 🔒
 - **🗳️ Enquetes e Votações (Em desenvolvimento)**: Criação e participação em votações para decisões do condomínio — em desenvolvimento
 
-## ✨ Funcionalidades Visuais
+## ✨ Funcionalidades Visuais e Interativas
 - **🎨 Design Moderno**: Interface limpa e intuitiva
 - **📱 Responsivo**: Funciona perfeitamente em todos os dispositivos
-- **🌈 Animações Suaves**: Transições e efeitos visuais elegantes
+- **� Menu Hambúrguer**: Navegação elegante em dispositivos móveis
+- **🔑 Modal de Login**: Interface profissional para acesso de síndicos
+- **❓ FAQ Interativo**: Seção de perguntas frequentes expansível
+- **📧 Formulário de Contato**: Sistema de envio de mensagens integrado
+- **🎯 Navegação Ativa**: Destaque automático da seção atual no menu
+- **�🌈 Animações Suaves**: Transições e efeitos visuais elegantes com direções variadas
 - **⬆️ Scroll to Top**: Botão flutuante para navegação rápida
-- **🎯 Emoticons**: Interface mais amigável e expressiva
+- **� Ícones Vetorizados**: Interface moderna com ícones profissionais Flaticon
 
 ## 📁 Estrutura do Projeto
 ```

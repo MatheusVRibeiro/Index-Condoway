@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>404 — Página não encontrada • CondoWay</title>
+    <link rel="icon" type="image/png" href="assets/icons/condoway-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <style>
+        /* Pequeno estilo complementar para a página 404 */
+        .error-404 {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .error-404 .code {
+            font-size: 7rem;
+            line-height: 1;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .error-404 h1 { font-size: 1.6rem; margin-bottom: 0.6rem; }
+        .error-404 p { color: var(--text-light); max-width: 720px; margin: 0 auto 1.5rem; }
+        .error-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .error-illustration { max-width: 420px; margin: 1.5rem auto 0; opacity: 0.95; }
+        @media (max-width: 520px) { .error-404 .code { font-size: 4.5rem; } }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/icons/condoway-logo.png" alt="CondoWay Logo">
+                <span>CondoWay</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="error-404">
+        <div class="container">
+            <div class="error-card">
+                <div class="code">404</div>
+                <h1>Página não encontrada</h1>
+                <p>A página que você está tentando acessar não foi encontrada ou foi removida. Verifique o endereço ou volte para a página inicial.</p>
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary" aria-label="Voltar para a página inicial">Voltar para o Início</a>
+                    <a href="index.html#contato" class="btn btn-secondary" aria-label="Entrar em contato">Entrar em Contato</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 CondoWay. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
